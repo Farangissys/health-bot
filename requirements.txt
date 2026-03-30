@@ -14,7 +14,7 @@ idna==3.11
 magic-filter==1.0.12
 multidict==6.7.1
 propcache==0.4.1
-pydantic==2.11.10
+pydantic==1.10.13
 pydantic_core==2.33.2
 pytz==2026.1.post1
 typing-inspection==0.4.2
