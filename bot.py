@@ -1026,8 +1026,6 @@ async def fallback_handler(message: types.Message):
 # RUN
 # =========================
 
-if __name__ == "__main__":
-    executor.start_polling(dp, skip_updates=True)
 import threading
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -1041,4 +1039,7 @@ def run_web():
     server = HTTPServer(('0.0.0.0', 10000), Handler)
     server.serve_forever()
 
-threading.Thread(target=run_web).start()
+
+if __name__ == "__main__":
+    threading.Thread(target=run_web).start()
+    executor.start_polling(dp, skip_updates=True)
